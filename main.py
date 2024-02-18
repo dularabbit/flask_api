@@ -1,10 +1,10 @@
-from flask import Flask, render_index
+from flask import Flask
 
 app = Flask(__name__)
 
 @app.route('/')
-def index():
-    return render_index('index.html')
+def hello_world():
+    return 'Hello, BU'
 
 if __name__ == '__main__':
     app.run(debug=True, port="8000")
